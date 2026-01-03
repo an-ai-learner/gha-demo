@@ -1,0 +1,16 @@
+name: gha demo python
+on: workflow_dispatch
+jobs:
+  demo_job:
+  run-ons: ubuntu-latest
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    #- name: Set up Python
+    #  uses: actions/setup-python@v5
+      #with:
+      #   python-version: '3.10' # Or whatever version you are using
+  
+    - name: Check Python Version
+      run: python --version
